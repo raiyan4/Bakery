@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: green; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e; /* Darker container background */
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Light shadow */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #f9f871; /* Highlight color for the title */
+}
+
+/* Form Row and Group Styling */
+.form-row {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.form-row.full-width {
+  display: block;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5em;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Dark input background */
+  color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.3); /* Light shadow on focus */
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 1em;
+  background-color: #f9f871; /* Highlight button color */
+  color: #121212; /* Dark button text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.3); /* Light shadow */
+}
+
+button[type="submit"]:hover {
+  background-color: #e0d66d; /* Slightly darker on hover */
+}
+
+textarea {
+  resize: vertical;
+}
